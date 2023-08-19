@@ -25,13 +25,24 @@ function hitrn() {
 }
 
 function bubbles() {
+    let bmax;
     let buble = "";
-    for (let i = 1; i <= 152; i++) {
+    const detectDeviceType = () =>
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    ? 'Mobile'
+    : 'Desktop';
+ if (detectDeviceType() === 'Desktop'){
+    bmax=152;
+    console.log(bmax)}
+ else if(detectDeviceType() === 'Mobile'){
+    bmax=55;
+    console.log(bmax)}
+    for (let i = 1; i <= bmax; i++) {
         let rn = Math.floor(Math.random() * 10);
         buble += `<div class="bubble">${rn}</div>`
         document.querySelector("#bubblesinput").innerHTML = buble
-        document.querySelector("#bubblesinput").classList.add('hidden')
-    }
+        document.querySelector("#bubblesinput").classList.add('hidden')}
+    
 }
 
 document.getElementById('bubblesinput').addEventListener('click', function (e) {
