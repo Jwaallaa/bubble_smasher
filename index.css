@@ -55,16 +55,7 @@
     background-color: rgb(37, 37, 37);
     cursor: pointer;
 }
-/* 
-@media only screen and (max-width: 600px){
-    .bubble{
-        height: 70px;
-        width: 70px;
-    }
-    .dash-items{
-        font-size:medium;
-    }
-} */
+
 
 .bubble:hover{
     color: rgb(136, 71, 47);
