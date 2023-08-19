@@ -55,6 +55,14 @@
     background-color: rgb(37, 37, 37);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px){
+    .bubble{
+        height: 70px;
+        width: 70px;
+    }
+}
+
 .bubble:hover{
     color: rgb(136, 71, 47);
 }
@@ -79,8 +87,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    width: 20vw;
+    height: 200px;
+    width: 200px;
     position: relative;
     top: 10vh;
     background-color: coral;
@@ -103,3 +111,4 @@ background-color: rgb(255, 255, 255);
     overflow: hidden;
 
 }
+
