@@ -32,11 +32,9 @@ function bubbles() {
     ? 'Mobile'
     : 'Desktop';
  if (detectDeviceType() === 'Desktop'){
-    bmax=152;
-    console.log(bmax)}
+    bmax=152;}
  else if(detectDeviceType() === 'Mobile'){
-    bmax=55;
-    console.log(bmax)}
+    bmax=55;}
     for (let i = 1; i <= bmax; i++) {
         let rn = Math.floor(Math.random() * 10);
         buble += `<div class="bubble">${rn}</div>`
